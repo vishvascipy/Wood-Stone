@@ -1,13 +1,111 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    justify-content: center;
+    align-items: center;
+}
+.Metlife {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 5px;
+    padding-left: 36px;
+    padding-right: 88px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20rem;
+    margin-bottom: 20rem;
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        padding: 0 20px;
+    }
+    .img1 {
+        padding: 20px;
+    }
+    .navbar1 img {
+        width: 100px;
+    }
+    .nav {
+        text-align: center;
+    }
+    .Metlife {
+        display: flex;
+        width: 200px;
+        height: 96px;
+        padding-top: 40.9px;
+        padding-bottom: 5px;
+        padding-left: 36px;
+        padding-right: 88px;
+        background: white;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+        margin-left: 1rem;
+        margin-bottom: 10rem;
+        position: absolute;
+        bottom: 0;
+    }
+    
+
+    
+
+}
+
+
+@media (max-width: 500px) {
+    @media (max-width: 500px) {
+    .main {
+        padding: 0 10px; 
+    }
+    .img1 {
+        padding: 10px; 
+    }
+    .navbar1 img {
+        width: 80px;
+    }
+    .nav {
+        text-align: center;
+        font-size: 16px; 
+    }
+    
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 .pic {
     display: flex;
-    width: 100%;
+    width: 100%;    
+    flex-wrap: wrap;
 }
 
 .img1 {
     padding: auto;
     position: relative;
     width: 100%;
-    height: 559px;
+    height: 600px;  
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -64,8 +162,8 @@
 }
 
 .nav {
-    /* position: absolute; */
-    /* display: inline-/flex; */
+    position: absolute;
+    display: inline-/flex;
     width: 466.02px;
     height: 74px;
     padding-left: 32.33px;
@@ -84,7 +182,7 @@
     line-height: 20px;
     letter-spacing: 3px;
 
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 
 .txt {
@@ -119,8 +217,6 @@
     margin: -970px auto 0;
     margin-right: -100px;
     position: relative;
-
-
 }
 
 .arrow img {
@@ -148,11 +244,12 @@
     z-index: 1;
     margin-left: 0.5rem;
     margin-bottom: 4.2rem;
+    
 }
 
 .Metlife {
     width: 150px;
-    height: 96.5px;
+    height: 96px;
     padding-top: 40.9px;
     padding-bottom: 5px;
     padding-left: 36px;
@@ -175,7 +272,7 @@
     justify-content: center;
     align-items: center;
     display: inline-flex;
-    /* margin-top: -9.5rem; */
+    margin-top: -9.5rem;    
 }
 
 .button {
@@ -376,9 +473,11 @@
     margin-left: 49rem;
     margin-bottom: 247rem;
 }
-/* 
-.class1 {
-    margin-right: 500rem;
-    margin-top: 22rem;
 
-} */
+@media (max-width: 500px) {
+    .int {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}  */

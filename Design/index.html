@@ -1,59 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wood Stone</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div>
-        <style>
-            body {
-                background-image: url('/assets/div.hero-background-image.png');
-                background-size: cover;  
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-            }
-        </style>
+    <div class="header">
+        <div class="icon">
+            <div class="icon-image"> <img src="/assets/logo 2 2.png" alt=""></div>
+            <div class="icon-text"></div>
+        </div>
+        <div class="menuContainer">
+            <ul class="menu-list">
+                <li class="menu"><a href="services">Services</a></li>
+                <li class="menu"><a href="projects">Projects</a></li>
+                <li class="menu"><a href="contact">Contact</a></li>
+            </ul>
+        </div>
 
-
-        <div
-            style="width: 72%; height: 74px; padding-left: 466.03px; justify-content: flex-end; align-items: center; display: inline-flex;">
-            <div
-                style="width: 50px; height: 74px; padding-left: 350px; background: #CA212A; justify-content: flex-end; align-items: center; display: inline-flex; margin-right: 47rem; margin-bottom: 1rem;">
-                <img style="width: 120px; height: 89px; margin-right: 13rem; margin-top: 1rem;"
-                    src="/assets/logo 2 2.png" />
-                <div
-                    style="width: 80px; align-self: stretch; padding-left: 27px; padding-right: 27px; border-left: 1px #F3F6FC solid; border-right: 1px #F3F6FC solid; justify-content: center; align-items: center; display: inline-flex">
-                    <div
-                        style="align-self: stretch; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                        <div style="width: 26px; height: 509px; position: relative"></div>
-                    </div>
-                </div>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img class="carousel-image "
+                    src="https://www.mcdonaldjoneshomes.com.au/sites/default/files/inline-images/Interior-Design-Trends.jpg"
+                    alt="">
             </div>
-            <div
-                style="width: 466.02px; align-self: stretch; padding-left: 32.33px; padding-right: 35.84px; justify-content: center; align-items: flex-start; gap: 64.38px; display: inline-flex; margin-top: 1.5rem;">
-                <div
-                    style="color: #CA212A; font-size: 14px; font-family: Inter; font-weight: 400; text-transform: uppercase; line-height: 20px; letter-spacing: 3px; word-wrap: break-word">
-                    <a href="services">Services</a>
-                </div>
-                <div
-                    style="color:#CA212A; font-size: 14px; font-family: Inter; font-weight: 400; text-transform: uppercase; line-height: 20px; letter-spacing: 3px; word-wrap: break-word">
-                    <a href="projects">Projects</a>
-                </div>
-                <div
-                    style="color:#CA212A; font-size: 14px; font-family: Inter; font-weight: 400; text-transform: uppercase; line-height: 20px; letter-spacing: 3px; word-wrap: break-word">
-                    <a href="contact">Contact</a>
-                </div>
+            <div class="carousel-item active">
+                <img class="carousel-image"
+                    src="https://www.hindustantimes.com/ht-img/img/2023/07/07/1600x900/spacejoy-8Y8U9fduILs-unsplash_1688704632311_1688704637827.jpg"
+                    alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-image" src="https://www.decorpot.com/images/interior-designers-in-hyderabad.jpg"
+                    alt="">
             </div>
         </div>
 
-        <div style="width: 100%; height: 95px; color: white; font-size: 78px; font-family: Inter; font-weight: 600; line-height: 93.60px; word-wrap: break-word; margin-left: 4rem; margin-bottom: 1rem; margin-top: 15rem;">Interior design</div>
-        <div style="width: 100%px; height: 95px; color: white; font-size: 78px; font-family: Inter; font-weight: 600; line-height: 93.60px; word-wrap: break-word; margin-left: 4rem;">that matters.</div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
 
     </div>
-    
+    <div class="headerbottom">
+        <div class="box1">
+            Featured
+        </div>
+        <div class="box2">
+            <p>Austin, Texas</p><br />
+            <b>MetLife Corporate Space</b>
+        </div>
+    </div>
+
+    <div class="partner">
+        <div class="partner-box1">
+            <div class="plus">
+                <button>+</button>
+            </div>
+        </div>
+        <div class="partner-box2">
+            <p>CLIENTS</p>
+
+        </div>
+    </div>
+    <div>
+        <div class='service'>
+            <p>Services</p>
+        </div>
+        <div class="wedo">
+            <p>We do it best.</p>
+        </div>
+        <div class="color-button">
+          <p>View all Service</p>
+        </div>
+    </div>
+
 </body>
+
 </html>
