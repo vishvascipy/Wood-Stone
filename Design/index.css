@@ -12,6 +12,40 @@ body {
   flex-wrap: wrap;
 }
 
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-left: 60px;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  margin: 0;
+}
+
+.carousel-caption h1 {
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  font-family: Inter;
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+
+.carousel-caption .second-line {
+  display: block;
+}
+
+.exp1 p {
+  font-size: 12px;
+}
+
 .header {
   display: flex;
   width: 100vw;
@@ -42,6 +76,11 @@ body {
   margin-top: 35px;
 }
 
+.menu-list a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 .menuContainer {
   width: 100%;
   height: 90px;
@@ -56,6 +95,7 @@ body {
   color: white;
   margin-left: 15px;
   margin-right: 15px;
+  z-index: 1;
 }
 
 .headerbottom {
@@ -100,6 +140,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.box2 p {
+  font-family: Inter;
+  font-size: 12px;
+}
+
+.box2 b {
+  color: #090B19;
+  font-family: Inter;
+  font-size: 18px;
 }
 
 .partner {
@@ -197,12 +248,51 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 20px;
+
+}
+
+.service-list p {
+  font-family: Inter;
+  font-size: 12px;
+}
+
+.service-list h2 {
+  color: #090B19;
+  font-family: Inter;
+  font-size: 48px;
+}
+
+.icontext h3 {
+  color: #090B19;
+  font-family: Inter;
+  font-size: 20px;
+}
+
+.recent p {
+  color: #090B19;
+  font-family: Inter;
+  font-size: 32px;
 }
 
 .logo {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+}
+
+.symbol h3 {
+  color: #090B19;
+  font-family: Inter;
+  font-size: 20px;
+}
+
+.symbol p {
+  color: #6E7488;
+  font-family: Open Sans;
+  font-size: 12px;
 }
 
 .symbol {
@@ -240,8 +330,8 @@ body {
 
 .explore img {
   margin-top: 100px;
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .details {
@@ -250,10 +340,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   background-color: #CA212A;
-  /* margin-left: 400px; */
   height: 100px;
   width: 50%;
   flex-wrap: wrap;
+  font-family: Inter;
+  font-size: 12px;
 }
 
 .exp1 {
@@ -282,6 +373,8 @@ body {
 .service-but button {
   color: #FFF;
   border: 2px solid #FFF;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .exp1 h3 {
@@ -339,6 +432,19 @@ body {
   text-align: center;
 }
 
+.allstate-content h6,
+.spotify-content h6,
+.microsoft-content h6,
+.exxon-content h6,
+.delta-content h6,
+.disney-content h6,
+.nike-content h6,
+.corporate-content h6,
+.home-content h6 {
+  font-family: Inter;
+  font-size: 24px;
+}
+
 .allstate-content p,
 .spotify-content p,
 .microsoft-content p,
@@ -348,7 +454,8 @@ body {
 .nike-content p,
 .corporate-content p,
 .home-content p {
-  font-size: 10px;
+  font-family: Inter;
+  font-size: 12px;
 }
 
 .allstate-style,
@@ -361,20 +468,10 @@ body {
 .corporate-style,
 .home-style {
   margin-top: 200px;
+  font-family: Inter;
+  font-size: 12px;
 }
 
-/* .allstate-style img,
-.spotify-style img,
-.microsoft-style img,
-.exxon-style img,
-.delta-style img,
-.disney-style img,
-.nike-style img,
-.corporate-style img,
-.home-style img{
-  max-width: 100%;
-  height: auto;
-} */
 
 
 .border {
@@ -398,6 +495,7 @@ body {
   border-radius: 20px;
   margin-top: 100px;
   margin-left: 120px;
+  margin: 100px;
 }
 
 .recent-works {
@@ -417,6 +515,8 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .popular-category {
@@ -427,26 +527,36 @@ body {
 }
 
 .section1 {
-  flex: 1; 
+  flex: 1;
   padding: 20px;
   text-align: left;
-  margin: 10px;
+  margin: 100px;
+  color: #090B19;
+  font-family: Inter;
+  font-size: 12px;
+  margin-top: 20px;
 }
 
+
 .section2 {
-  flex: 2; 
+  flex: 2;
   padding: 20px;
   text-align: center;
   margin: 10px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
   text-align: center;
   margin: 10px;
 }
 
-.work1, .work2, .work3, .work4, .work5, .work6 {
+.work1,
+.work2,
+.work3,
+.work4,
+.work5,
+.work6 {
   flex: 0 0 calc(50% - 20px);
   display: flex;
   flex-wrap: wrap;
@@ -456,32 +566,32 @@ body {
   margin: 10px;
 }
 
-.section2 .work1 .recent-image1 img{
+.section2 .work1 .recent-image1 img {
   width: 100%;
   height: auto;
 }
 
-.section2 .work2 .recent-image2 img{
+.section2 .work2 .recent-image2 img {
   width: 100%;
   height: auto;
 }
 
-.section2 .work3 .recent-image3 img{
+.section2 .work3 .recent-image3 img {
   width: 100%;
   height: auto;
 }
 
-.section2 .work4 .recent-image4 img{
+.section2 .work4 .recent-image4 img {
   width: 100%;
   height: auto;
 }
 
-.section2 .work5 .recent-image5 img{
+.section2 .work5 .recent-image5 img {
   width: 100%;
   height: auto;
 }
 
-.section2 .work6 .recent-image6 img{
+.section2 .work6 .recent-image6 img {
   width: 100%;
   height: auto;
 }
@@ -491,6 +601,9 @@ body {
   flex-wrap: wrap;
   font-size: 15px;
   text-align: center;
+  color: #090B19;
+  font-family: Inter;
+  font-size: 18px;
 }
 
 .section2 .work1 .work1-content1 .work1-content1-text2 {
@@ -498,6 +611,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
 }
 
 .section2 .work2 .work2-content2 .work2-content2-text1 {
@@ -505,6 +619,9 @@ body {
   flex-wrap: wrap;
   font-size: 15px;
   text-align: center;
+  color: #090B19;
+  font-family: Inter;
+  font-size: 18px;
 }
 
 .section2 .work2 .work2-content2 .work2-content2-text2 {
@@ -519,6 +636,9 @@ body {
   flex-wrap: wrap;
   font-size: 15px;
   text-align: center;
+  color: #090B19;
+  font-family: Inter;
+  font-size: 18px;
 }
 
 .section2 .work3 .work3-content3 .work3-content3-text2 {
@@ -533,6 +653,9 @@ body {
   flex-wrap: wrap;
   font-size: 15px;
   text-align: center;
+  color: #090B19;
+  font-family: Inter;
+  font-size: 18px;
 }
 
 .section2 .work4 .work4-content4 .work4-content4-text2 {
@@ -547,6 +670,9 @@ body {
   flex-wrap: wrap;
   font-size: 15px;
   text-align: center;
+  color: #090B19;
+  font-family: Inter;
+  font-size: 18px;
 }
 
 .section2 .work5 .work5-content5 .work5-content5-text2 {
@@ -561,6 +687,9 @@ body {
   flex-wrap: wrap;
   font-size: 15px;
   text-align: center;
+  color: #090B19;
+  font-family: Inter;
+  font-size: 18px;
 }
 
 .section2 .work6 .work6-content6 .work6-content6-text2 {
@@ -568,6 +697,158 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.about-us {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #CA212A;
+  width: 100%;
+  height: auto;
+}
+
+.about-back1,
+.about-back2,
+.about-back3,
+.about-back4 {
+  width: 100%;
+}
+
+.about-back1 {
+  top: 20%;
+  margin-left: 20px;
+  font-size: 45px;
+  color: #FFF;
+  padding: 10px;
+}
+
+.about-back2 {
+  top: 50%;
+  color: #FFF;
+  margin-left: 30px;
+  width: auto;
+}
+
+.about-back3 {
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  margin-top: 35px;
+  color: #FFF;
+  font-size: small;
+}
+
+.about-back4 {
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  margin-top: 35px;
+  color: #FFF;
+  font-size: small;
+}
+
+.about-back4 img {
+  width: 20px;
+  height: 20px;
+}
+
+.about-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Horizontally center the content */
+  justify-content: center;
+}
+
+.about1-about1,
+.about-about {
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.about-img1 {
+  width: 30px;
+  /* Adjust the size as needed */
+  height: 30px;
+  /* Adjust the size as needed */
+  background-color: white;
+  border-radius: 50%;
+  /* Makes the container circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.about-img2 {
+  width: 30px;
+  /* Adjust the size as needed */
+  height: 30px;
+  /* Adjust the size as needed */
+  background-color: white;
+  border-radius: 50%;
+  /* Makes the container circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+
+}
+
+.about-img3 {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.about-img4 {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.about-us-img1,
+.about-us-img2,
+.about-us-img3,
+.about-us-img4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin: 25px;
+}
+
+.about-margin1,
+.about-margin2,
+.about-margin3,
+.about-margin4 {
+  margin-top: 5px;
+}
+
+
+
+
+#contact-us {
+  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 480px) {
@@ -662,7 +943,7 @@ body {
   .row1,
   .row2,
   .row3 {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
   }
 
@@ -670,7 +951,18 @@ body {
     flex-direction: column;
   }
 
-  .work1, .work2, .work3, .work4, .work5, .work6 {
+  .work1,
+  .work2,
+  .work3,
+  .work4,
+  .work5,
+  .work6 {
     flex: 0 0 calc(100% - 20px);
+  }
+
+  .img-main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
   }
 }
