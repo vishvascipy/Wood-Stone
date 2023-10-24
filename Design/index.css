@@ -74,6 +74,8 @@ body {
   justify-content: center;
   color: #FFF;
   margin-top: 35px;
+  margin-left: 5px;
+
 }
 
 .menu-list a {
@@ -757,7 +759,8 @@ body {
 
 .about-about {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   align-items: center;
   /* Horizontally center the content */
   justify-content: center;
