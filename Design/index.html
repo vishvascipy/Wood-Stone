@@ -25,8 +25,8 @@
         }
 
         .icon-image img {
-            width: 50px;
-            height: 50px;
+            width: auto;
+            height: 100px;
         }
 
         .menuContainer {
@@ -42,6 +42,7 @@
         .menu-list li {
             display: inline;
             margin-right: 15px;
+            margin-top: 20px;
             /* Adjust the spacing as needed */
         }
 
@@ -58,11 +59,21 @@
         @media screen and (max-width: 768px) {
             .menu-list {
                 display: none;
-                text-align: center;
+                /* text-align: center; */
             }
 
             .menu-list.active {
                 display: block;
+            }
+
+            .menu-icon {
+                display: block;
+                /* Display the menu icon on small screens */
+            }
+
+            .close-icon {
+                display: none;
+                /* Initially hide the close icon on small screens */
             }
         }
 
@@ -87,8 +98,20 @@
             .menu-icon {
                 display: none;
             }
+
             .close-icon {
                 display: none;
+            }
+
+            .menuContainer {
+                display: flex;
+                flex-wrap:wrap ;
+            }
+
+            .menu-list {
+                float: left;
+                margin-left: 600px;
+                /* Move menu-list to the left */
             }
         }
     </style>
@@ -97,27 +120,24 @@
 <body>
     <div class="header">
         <div class="icon">
-            <div class="icon-image"><img src="/assets/logo 2 2.png" alt="">
-                <div class="menuContainer">
-                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-                    <div class="close-icon" onclick="toggleMenu()" style="display:none;">&times;</div>
-                    <ul class="menu-list">
-                        <li class="menu"><a href="./index.html">Home</a></li>
-                        <li class="menu"><a href="./Service/service.html">Services</a></li>
-                        <li class="menu"><a href="./Projects/projects.html">Projects</a></li>
-                        <li class="menu"><a href="#contact-us">Contact</a></li>
-                    </ul>
-                </div>
+            <div class="icon-image"><img src="/Wood-Stone/assets/logo 2 2.png" alt=""></div>
+            <!-- <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="close-icon" onclick="toggleMenu()" style="display:none;">&times;</div> -->
+            <div class="menuContainer">
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <div class="close-icon" onclick="toggleMenu()" style="display:none;">&times;</div>
+                <ul class="menu-list">
+                    <li class="menu"><a href="./index.html">Home</a></li>
+                    <li class="menu"><a href="./Service/service.html">Services</a></li>
+                    <li class="menu"><a href="./Projects/projects.html">Projects</a></li>
+                    <li class="menu"><a href="#contact-us">Contact</a></li>
+                </ul>
             </div>
-            <script>
+            <!-- <script>
                 function toggleMenu() {
                     var menu = document.querySelector(".menu-list");
                     var menuIcon = document.querySelector(".menu-icon");
                     var closeIcon = document.querySelector(".close-icon");
-
-                    // menu.classList.toggle("active");
-                    // menuIcon.style.display = menuIcon.style.display === "none" ? "block" : "none";
-                    // closeIcon.style.display = closeIcon.style.display === "none" ? "block" : "none";
                     menu.classList.toggle("active");
                     if (menu.classList.contains("active")) {
                         menuIcon.style.display = "none";
@@ -127,26 +147,20 @@
                         closeIcon.style.display = "none";
                     }
                 }
-            </script>
+            </script> -->
+            <div class="icon-text"></div>
         </div>
-        <div class="icon-text"></div>
-    </div>
-    <!-- <div class="menuContainer">
+        <!-- <div class="menuContainer">
             <ul class="menu-list">
                 <li class="menu"><a href="./index.html">Home</a></li>
                 <li class="menu"><a href="./Service/service.html">Services</a></li>
                 <li class="menu"><a href="./Projects/projects.html">Projects</a></li>
                 <li class="menu"><a href="#contact-us">Contact</a></li>
             </ul>
-            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-        </div>
+        </div> -->
+
+
     </div>
-    <script>
-        function toggleMenu() {
-            var menu = document.querySelector(".menu-list");
-            menu.classList.toggle("active");
-        }
-    </script> -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item">
@@ -224,7 +238,7 @@
 
     <div class="logo">
         <div class="symbol">
-            <img src="/assets/pic4.png">
+            <img src="/Wood-Stone/assets/pic4.png">
             <div class="icontext">
                 <h3>Construction</h3>
                 <p>From groundbreaking to final touches, we manage every aspect of your construction project. Whether
@@ -233,18 +247,18 @@
             </div>
         </div>
         <div class="symbol">
-            <img src="/assets/pic3.png">
+            <img src="/Wood-Stone/assets/pic3.png">
             <h3>Interior Design</h3>
             <p>Our interior design experts bring life to your spaces, combining aesthetics and functionality to create
                 an ambiance that resonates with your style and needs.</p>
         </div>
         <div class="symbol">
-            <img src="/assets/pic2.png">
+            <img src="/Wood-Stone/assets/pic2.png">
             <h3>Plans</h3>
             <p>This is for Plans details space here</p>
         </div>
         <div class="symbol">
-            <img src="/assets/pic1.png">
+            <img src="/Wood-Stone/assets/pic1.png">
             <h3>Real Estates</h3>
             <p>This is for Real Estates details space here</p>
         </div>
@@ -257,7 +271,8 @@
         </video>
     </div>
     <div class="explore">
-        <img src="/assets/night-architecture-outdoors-dusk-building-exterior-tree-grass-illuminated-generative-ai.jpg">
+        <img
+            src="/Wood-Stone/assets/night-architecture-outdoors-dusk-building-exterior-tree-grass-illuminated-generative-ai.jpg">
         <div class="exp1">
             <p>EXPLORE OUR WORK</p>
             <h3>See what we can do together.</h3>
@@ -277,7 +292,7 @@
     <div class="img-main">
         <div class="row1">
             <div class="allstate">
-                <img src="/assets/back1.png">
+                <img src="/Wood-Stone/assets/back1.png">
                 <div class="allstate-content">
                     <p>MIAMI, FLORIDA</p>
                     <h6>Allstate Employee Lounge</h6>
@@ -287,7 +302,7 @@
                 </div>
             </div>
             <div class="spotify">
-                <img src="/assets/back2.png">
+                <img src="/Wood-Stone/assets/back2.png">
                 <div class="spotify-content">
                     <p>NEW YORK, NEW YORK</p>
                     <h6>Spotify Satellite Office</h6>
@@ -297,7 +312,7 @@
                 </div>
             </div>
             <div class="microsoft">
-                <img src="/assets/back3.png">
+                <img src="/Wood-Stone/assets/back3.png">
                 <div class="microsoft-content">
                     <p>MIAMI, FLORIDA</p>
                     <h6>Microsoft Office Lounge</h6>
@@ -310,7 +325,7 @@
         </div>
         <div class="row2">
             <div class="exxon">
-                <img src="/assets/back4.png">
+                <img src="/Wood-Stone/assets/back4.png">
                 <div class="exxon-content">
                     <p>LOS ANGELES, CALIFORNIA</p>
                     <h6>Exxon Mobile Offices</h6>
@@ -320,7 +335,7 @@
                 </div>
             </div>
             <div class="delta">
-                <img src="/assets/back5.png">
+                <img src="/Wood-Stone/assets/back5.png">
                 <div class="delta-content">
                     <p>SAN FRANCISCO, CALIFORNIA</p>
                     <h6>Delta Satellite Office</h6>
@@ -330,7 +345,7 @@
                 </div>
             </div>
             <div class="disney">
-                <img src="/assets/back6.png">
+                <img src="/Wood-Stone/assets/back6.png">
                 <div class="disney-content">
                     <p>SAN FRANCISCO, CALIFORNIA</p>
                     <h6>Disney Employee Loft</h6>
@@ -343,7 +358,7 @@
         </div>
         <div class="row3">
             <div class="nike">
-                <img src="/assets/back7.png">
+                <img src="/Wood-Stone/assets/back7.png">
                 <div class="nike-content">
                     <p>LOS ANGELES, CALIFORNIA</p>
                     <h6>Nike Corporate Space</h6>
@@ -353,7 +368,7 @@
                 </div>
             </div>
             <div class="corporate">
-                <img src="/assets/back8.png">
+                <img src="/Wood-Stone/assets/back8.png">
                 <div class="corporate-content">
                     <p>AUSTIN, TEXAS</p>
                     <h6>MetLife Corporate Space</h6>
@@ -363,7 +378,7 @@
                 </div>
             </div>
             <div class="home">
-                <img src="/assets/back9.png">
+                <img src="/Wood-Stone/assets/back9.png">
                 <div class="home-content">
                     <p>BROOKLYN, NEW YORK</p>
                     <h6>Home Depot Headquarters</h6>
@@ -401,7 +416,7 @@
             <div class="section2">
                 <div class="work1">
                     <div class="recent-image1">
-                        <img src="/assets/back1.png">
+                        <img src="/Wood-Stone/assets/back1.png">
                     </div>
                     <div class="work1-content1">
                         <div class="work1-content1-text1">
@@ -419,7 +434,7 @@
                 </div>
                 <div class="work2">
                     <div class="recent-image2">
-                        <img src="/assets/back5.png">
+                        <img src="/Wood-Stone/assets/back5.png">
                     </div>
                     <div class="work2-content2">
                         <div class="work2-content2-text1">
@@ -435,7 +450,7 @@
                 </div>
                 <div class="work3">
                     <div class="recent-image3">
-                        <img src="/assets/back2.png">
+                        <img src="/Wood-Stone/assets/back2.png">
                     </div>
                     <div class="work3-content3">
                         <div class="work3-content3-text1">
@@ -452,7 +467,7 @@
                 </div>
                 <div class="work4">
                     <div class="recent-image4">
-                        <img src="/assets/back3.png">
+                        <img src="/Wood-Stone/assets/back3.png">
                     </div>
                     <div class="work4-content4">
                         <div class="work4-content4-text1">
@@ -469,7 +484,7 @@
                 </div>
                 <div class="work5">
                     <div class="recent-image5">
-                        <img src="/assets/back6.png">
+                        <img src="/Wood-Stone/assets/back6.png">
                     </div>
                     <div class="work5-content5">
                         <div class="work5-content5-text1">
@@ -486,7 +501,7 @@
                 </div>
                 <div class="work6">
                     <div class="recent-image6">
-                        <img src="/assets/back4.png">
+                        <img src="/Wood-Stone/assets/back4.png">
                     </div>
                     <div class="work6-content6">
                         <div class="work6-content6-text1">
@@ -543,25 +558,25 @@
                     <p>FOLLOW US</p>
                     <div class="about-us-img1">
                         <div class="about-img1">
-                            <img src="/assets/insta.png">
+                            <img src="/Wood-Stone/assets/insta.png">
                         </div>
                         <div class="about-margin1">@nside</div>
                     </div>
                     <div class="about-us-img2">
                         <div class="about-img2">
-                            <img src="/assets/facebook.png">
+                            <img src="/Wood-Stone/assets/facebook.png">
                         </div>
                         <div class="about-margin2">@nside</div>
                     </div>
                     <div class="about-us-img3">
                         <div class="about-img3">
-                            <img src="/assets/linkedin.png">
+                            <img src="/Wood-Stone/assets/linkedin.png">
                         </div>
                         <div class="about-margin3">@nside</div>
                     </div>
                     <div class="about-us-img4">
                         <div class="about-img4">
-                            <img src="/assets/youtube.png">
+                            <img src="/Wood-Stone/assets/youtube.png">
                         </div>
                         <div class="about-margin4">@nside</div>
                     </div>
@@ -573,5 +588,20 @@
         </div>
     </div>
 </body>
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector(".menu-list");
+        var menuIcon = document.querySelector(".menu-icon");
+        var closeIcon = document.querySelector(".close-icon");
+        menu.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+            menuIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        } else {
+            menuIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+    }
+</script>
 
 </html>

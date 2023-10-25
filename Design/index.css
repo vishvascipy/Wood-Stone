@@ -62,6 +62,7 @@ body {
 }
 
 .icon {
+  display: flex;
   margin-left: 70px;
   width: 100%;
   min-width: 340px;
@@ -74,13 +75,14 @@ body {
   justify-content: center;
   color: #FFF;
   margin-top: 35px;
-  margin-left: 5px;
-
+  margin-left: 900px;
 }
 
 .menu-list a {
   text-decoration: none;
   color: #FFF;
+  margin-top: 5px;
+  /* left: 100px; */
 }
 
 .menuContainer {
@@ -387,6 +389,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 80px;
+  justify-content:center ;
 }
 
 .row1,
