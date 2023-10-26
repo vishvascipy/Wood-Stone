@@ -123,7 +123,7 @@ body {
 .box1 {
   font-size: 15px;
   font-family: "Open Sans";
-  background-color: #CA212A;
+  background-color: #82141A;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   width: 7.5rem;
@@ -285,16 +285,17 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  background-color: #82141A;
 }
 
 .symbol h3 {
-  color: #090B19;
+  color: #FFF;
   font-family: Inter;
   font-size: 20px;
 }
 
 .symbol p {
-  color: #6E7488;
+  color: #FFF;
   font-family: Open Sans;
   font-size: 12px;
 }
